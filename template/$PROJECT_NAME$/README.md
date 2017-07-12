@@ -5,10 +5,16 @@
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
+  * Install NPM dependencies by navigating to `assets` and running `npm install`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Seed your Admin user by running `mix run priv/repo/seeds.exs`
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+You can log in to your server with the following credentials:
+Email: `admin@<%= @project_name %>.com`
+Password: `admin1`
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
