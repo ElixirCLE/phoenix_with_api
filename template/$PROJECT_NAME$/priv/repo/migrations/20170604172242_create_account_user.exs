@@ -6,6 +6,7 @@ defmodule <%= @project_name_camel_case %>.Repo.Migrations.Create<%= @project_nam
       add :name, :string, null: false
       add :email, :string, null: false
       add :password_hash, :string, null: false
+      add :admin, :boolean, default: false
 
       timestamps()
     end

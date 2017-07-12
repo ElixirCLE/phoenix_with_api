@@ -5,7 +5,7 @@ defmodule <%= @project_name_camel_case %>.Account.User do
   alias <%= @project_name_camel_case %>.Account.User
 
   @required_fields ~w(email name)a
-  @optional_fields ~w(active admin password)a
+  @optional_fields ~w(admin password)a
   @all_fields @required_fields ++ @optional_fields
 
   @required_reg_fields ~w(password)a ++ @required_fields
@@ -18,7 +18,6 @@ defmodule <%= @project_name_camel_case %>.Account.User do
     field :password, :string, virtual: true
     field :password_hash, :string
 
-    field :active, :boolean, default: false
     field :admin, :boolean, default: false
 
     timestamps()
