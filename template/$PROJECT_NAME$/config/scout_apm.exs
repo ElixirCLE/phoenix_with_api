@@ -5,8 +5,8 @@
 use Mix.Config
 
 config :scout_apm,
-  name: "YourApp", # The app name that will appear within the Scout UI
-  key: "Qy0hDGjhlAviVv7lsMvx"
+  name: "<%= @project_name_camel_case %>", # The app name that will appear within the Scout UI
+  key: "your-key-here"
 
 config :phoenix, :template_engines,
   eex: ScoutApm.Instruments.EExEngine,
