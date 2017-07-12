@@ -2,7 +2,7 @@
 
 This is a mix template for creating a basic Phoenix application that also has an API. The template will start you out with working registration, session, and basic account pages/endpoints.
 
-The only missing part of the Pheonix project is the Pheonix logo and the Favicon.
+The only missing part of the Phoenix project is the Phoenix logo and the Favicon.
 
 The following non-default dependencies are included:
 - Comeonin for password hashing

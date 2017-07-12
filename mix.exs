@@ -13,7 +13,7 @@ defmodule PhoenixWithApi.Mixfile do
   @github      "https://github.com/ElixirCLE/#{@name}"
 
   @description """
-  Creates a basic Pheonix project with authentication, authorization, and an API.
+  Creates a basic Phoenix project with authentication, authorization, and an API.
   """
 
   # ------------------------------------------------------------
