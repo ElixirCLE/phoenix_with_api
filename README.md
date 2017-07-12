@@ -8,6 +8,7 @@ The following non-default dependencies are included:
 - Comeonin for password hashing
 - Guardian for authentication and JWT generation/verification
 - Canary for authorization.
+- Credo for static code analysis
 
 If you create a Heroku project, the following dependencies are also included:
 - Scout APM for application monitoring
