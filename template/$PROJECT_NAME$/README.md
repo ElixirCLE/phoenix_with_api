@@ -12,9 +12,11 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-You can log in to your server with the following credentials:
-Email: `admin@<%= @project_name %>.com`
+You can log in to your server with the following credentials:  
+Email: `admin@<%= @project_name %>.com`  
 Password: `admin1`
+
+**NOTE: The first thing you should do is change the Admin user's credentials.**
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
@@ -108,8 +110,8 @@ contains the JWT in the "Bearer" realm of the authorization header.
 <%= if @is_heroku? do %>
 * DATABASE_URL - The URL to your postgres database instance on Heroku
 <% end %>
-* PG_USER - The postgres username
-* PG_PASSWORD - THe postgres password
+* PG_USER - The Postgres username
+* PG_PASSWORD - The Postgres password
 
 ### JWT Key Configuration
 
