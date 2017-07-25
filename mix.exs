@@ -24,7 +24,7 @@ defmodule PhoenixWithApi.Mixfile do
       app:     @name,
       version: @version,
       deps:    @deps,
-      elixir:  "~> 1.4",
+      elixir:  "~> 1.5",
       package: package(),
       description:     @description,
       build_embedded:  in_production,
