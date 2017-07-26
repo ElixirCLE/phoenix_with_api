@@ -11,7 +11,7 @@ defmodule <%= @project_name_camel_case %>.Account.User do
   @required_reg_fields ~w(password)a ++ @required_fields
   @all_reg_fields @required_reg_fields ++ @optional_fields
 
-  schema "account_users" do
+  schema "users" do
     field :email, :string
     field :name, :string
 

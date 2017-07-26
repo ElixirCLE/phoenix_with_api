@@ -1,5 +1,5 @@
-defmodule <%= @project_name_camel_case %>.Web.RegistrationControllerTest do
-  use <%= @project_name_camel_case %>.Web.ConnCase
+defmodule <%= @project_name_camel_case %>Web.RegistrationControllerTest do
+  use <%= @project_name_camel_case %>Web.ConnCase
 
   describe "UI registration" do
     @create_attrs %{email: "some email", name: "some name", password: "some password", password_confirmation: "some password"}

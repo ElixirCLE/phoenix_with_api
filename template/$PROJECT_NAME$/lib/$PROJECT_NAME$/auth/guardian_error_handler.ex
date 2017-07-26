@@ -1,5 +1,5 @@
 defmodule <%= @project_name_camel_case %>.GuardianErrorHandler do
-  import <%= @project_name_camel_case %>.Web.Router.Helpers
+  import <%= @project_name_camel_case %>Web.Router.Helpers
 
   @moduledoc ""
 

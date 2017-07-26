@@ -1,5 +1,5 @@
-defmodule <%= @project_name_camel_case %>.Web.UserController do
-  use <%= @project_name_camel_case %>.Web, :controller
+defmodule <%= @project_name_camel_case %>Web.UserController do
+  use <%= @project_name_camel_case %>Web, :controller
   alias <%= @project_name_camel_case %>.Account
 
   plug :load_and_authorize_resource, model: Account.User
