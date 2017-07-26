@@ -46,7 +46,7 @@ mix gen ./phoenix_with_api name_of_project --travis_ci
 
 Use this option when you'd like your project to be configured to work with [Heroku](https://heroku.com). When set, this will generate several files:
 * `Procfile` - Configured to run your migrations whenever you make a new release and start your server
-* `elixir_buildpack.config` - Configured to tell Heroku that you are running on Elixir 1.4.5
+* `elixir_buildpack.config` - Configured to tell Heroku that you are running on Elixir 1.5.0
 * `config/scout_apm.exs` - Configures your project to work with Scout APM for application monitoring in Heroku
 
 #### Usage
