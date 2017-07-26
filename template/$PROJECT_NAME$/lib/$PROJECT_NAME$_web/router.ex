@@ -1,5 +1,5 @@
-defmodule <%= @project_name_camel_case %>.Web.Router do
-  use <%= @project_name_camel_case %>.Web, :router
+defmodule <%= @project_name_camel_case %>Web.Router do
+  use <%= @project_name_camel_case %>Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -33,18 +33,18 @@ defmodule <%= @project_name_camel_case %>.Web.Router do
     plug <%= @project_name_camel_case %>.Plug.ViewAuthenticate
   end
 
-  scope "/", <%= @project_name_camel_case %>.Web do
+  scope "/", <%= @project_name_camel_case %>Web do
     pipe_through :browser # Use the default browser stack
 
     resources "/registrations", RegistrationController, only: [:create, :new]
     resources "/login", SessionController, only: [:create, :new]
   end
 
-  scope "/", <%= @project_name_camel_case %>.Web do
+  scope "/", <%= @project_name_camel_case %>Web do
     pipe_through [:browser, :browser_auth, :view_authenticate]
   end
 
-  scope "/", <%= @project_name_camel_case %>.Web do
+  scope "/", <%= @project_name_camel_case %>Web do
     pipe_through [:browser, :browser_auth, :edit_authenticate]
 
     get "/", PageController, :index
@@ -54,7 +54,7 @@ defmodule <%= @project_name_camel_case %>.Web.Router do
     delete "/logout", SessionController, :delete
   end
 
-  scope "/api", <%= @project_name_camel_case %>.Web do
+  scope "/api", <%= @project_name_camel_case %>Web do
     pipe_through :api
 
     scope "/v1" do

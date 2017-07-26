@@ -1,5 +1,5 @@
-defmodule <%= @project_name_camel_case %>.Web.LayoutView do
-  use <%= @project_name_camel_case %>.Web, :view
+defmodule <%= @project_name_camel_case %>Web.LayoutView do
+  use <%= @project_name_camel_case %>Web, :view
 
   alias <%= @project_name_camel_case %>.Account.{Session, User}
 
