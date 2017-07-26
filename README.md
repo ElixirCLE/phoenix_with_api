@@ -34,7 +34,7 @@ Several options exist to help set up your project with some extra configuration:
 
 ### travis_ci
 
-Use this option when you'd like your project to be configured to work with [Travis CI](https://travis-ci.org). When set, this will generate a `.travis.yml` file that is configured to use Elixir 1.4.5 and OTP 20.0.
+Use this option when you'd like your project to be configured to work with [Travis CI](https://travis-ci.org). When set, this will generate a `.travis.yml` file that is configured to use Elixir 1.5.0 and OTP 20.0.
 
 #### Usage
 

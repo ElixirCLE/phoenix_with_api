@@ -23,12 +23,13 @@ config :<%= @project_name %>, <%= @project_name_camel_case %>.Repo,
   adapter: Ecto.Adapters.Postgres,
   <%= if @is_heroku? do %>
   url: System.get_env("DATABASE_URL"),
+  loggers: [{Ecto.LogEntry, :log, []},
+            {ScoutApm.Instruments.EctoLogger, :log, []}],
   <% else %>
   username: System.get_env("PG_USER"),
   password: System.get_env("PG_PASSWORD"),
   database: "<%= @project_name %>_prod",
-  loggers: [{Ecto.LogEntry, :log, []},
-            {ScoutApm.Instruments.EctoLogger, :log, []}],
+  loggers: [{Ecto.LogEntry, :log, []}],
   <% end %>
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "15"),
   ssl: true

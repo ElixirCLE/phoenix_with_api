@@ -19,7 +19,9 @@ defmodule <%= @project_name_camel_case %>.Web do
   def controller do
     quote do
       use Phoenix.Controller, namespace: <%= @project_name_camel_case %>.Web
+      <%= if @is_heroku? do %>
       use ScoutApm.Instrumentation
+      <% end %>
       import Plug.Conn
       import <%= @project_name_camel_case %>.Web.Router.Helpers
       import <%= @project_name_camel_case %>.Web.Gettext
